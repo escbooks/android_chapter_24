@@ -1,0 +1,51 @@
+<!-- Drawer Root -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- this FrameLayout is for the fullscreen Fragments -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- this LinearLayout is for drawer content -->
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F9E8E3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/vending_machine" />
+
+        <Button
+            android:id="@+id/drawer_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Settings"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/drawer_how_works_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="How does it work"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
